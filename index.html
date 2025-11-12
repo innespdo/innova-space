@@ -419,6 +419,51 @@
     .gallery-arrow:hover{ background:rgba(255,255,255,0.45); }
     .gallery-arrow.left{ left:24px; }
     .gallery-arrow.right{ right:24px; }
+	/* 📱 Ajustes para móviles */
+@media (max-width: 768px) {
+  .nav img {
+    height: 120px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .hero-desc {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .vision-content, .mision-content {
+    width: 100%;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
   </style>
 </head>
 
