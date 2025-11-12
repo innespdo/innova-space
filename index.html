@@ -648,6 +648,20 @@ section {
   width: clamp(32px, 6vw, 60px);
   height: auto;
 }
+/* 🔧 Ajuste del tamaño del logo en móviles */
+@media (max-width: 768px) {
+  .nav img {
+    max-width: 48vw; /* antes estaba en 40vw */
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav img {
+    max-width: 55vw; /* un poquito más grande en pantallas pequeñas */
+    height: auto;
+  }
+}
 
   </style>
 </head>
