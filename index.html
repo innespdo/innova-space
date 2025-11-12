@@ -575,6 +575,36 @@ html {
   height: auto;
   aspect-ratio: 1 / 1;
 }
+/* 🧠 Ajuste universal de escala y altura dinámica */
+html, body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden; /* evita desplazamiento lateral */
+}
+
+.hero {
+  min-height: 100dvh; /* usa altura dinámica segura en móviles modernos */
+  height: auto;
+}
+
+/* 📏 Corrección visual adicional en móviles */
+@supports (height: 100dvh) {
+  .hero {
+    height: 100dvh; /* usa altura real visible si el navegador la soporta */
+  }
+}
+
+/* Asegura que el contenido no quede pegado a los bordes */
+section {
+  padding-left: clamp(15px, 4vw, 40px);
+  padding-right: clamp(15px, 4vw, 40px);
+}
+
+/* Corrige posibles desbordes del logo */
+.nav img {
+  max-width: min(160px, 35vw);
+  height: auto;
+}
 
   </style>
 </head>
