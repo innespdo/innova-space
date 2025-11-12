@@ -464,6 +464,52 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ✅ Ajustes extra para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .nav img {
+    height: 90px;
+  }
+
+  .hero {
+    padding-top: 160px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .hero-desc {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-content, .mision-content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn, .btn-gold {
+    font-size: 14px;
+    padding: 10px 22px;
+  }
+}
+
   </style>
 </head>
 
