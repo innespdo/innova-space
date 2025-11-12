@@ -544,6 +544,38 @@
     width: 38px;
   }
 }
+/* 🌍 Ajuste adaptable a cualquier tamaño de pantalla */
+html {
+  font-size: 100%;
+}
+
+/* Usa tamaños relativos para que los textos escalen según la pantalla */
+.hero-title {
+  font-size: clamp(24px, 5vw, 52px);
+}
+
+.hero-desc {
+  font-size: clamp(14px, 2.5vw, 18px);
+  line-height: 1.6;
+}
+
+/* Botones que escalan suavemente */
+.btn, .btn-gold {
+  font-size: clamp(14px, 2vw, 16px);
+  padding: clamp(10px, 2.5vw, 14px) clamp(18px, 3vw, 28px);
+}
+
+/* Las imágenes del logo y galería se adaptan fluidamente */
+.nav img {
+  max-width: 40vw;
+  height: auto;
+}
+
+.gallery img {
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
   </style>
 </head>
 
